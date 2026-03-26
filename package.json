@@ -1,0 +1,14 @@
+{
+    "name": "theannoying-degoog-extensions",
+    "description": "TheAnnoying's degoog themes",
+    "repo-image": "https://github.com/TheAnnoying.png",
+    "author": "TheAnnoying",
+    "themes": [
+        {
+            "path": "themes/LiterallyGoogle",
+            "name": "Literally Google",
+            "description": "A theme replicating Google's design.",
+            "version": "1.0.0"
+        }
+    ]
+}
