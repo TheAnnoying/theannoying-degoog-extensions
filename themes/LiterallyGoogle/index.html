@@ -2,85 +2,85 @@
 <html lang="en" __THEME_ATTRS__>
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="degoog is an alternative search engine aggregator." />
-	<link rel="icon" href="/public/favicon/favicon.ico?v=__APP_VERSION__" type="image/x-icon" />
-	<link rel="manifest" href="/public/favicon/site.webmanifest" crossorigin="use-credentials" />
-	<link rel="search" type="application/opensearchdescription+xml" title="degoog" href="/opensearch.xml" />
-	<title>degoog</title>
-	<script>
-		(function () {
-			var t = localStorage.getItem("theme");
-			var r = document.documentElement;
-			if (t === "light") r.setAttribute("data-theme", "light");
-			else if (t === "dark") r.setAttribute("data-theme", "dark");
-			else {
-				var m = window.matchMedia("(prefers-color-scheme: dark)");
-				r.setAttribute("data-theme", m.matches ? "dark" : "light");
-			}
-		})();
-	</script>
-	<link rel="stylesheet" href="/theme/style.css?v=__APP_VERSION__" />
-	__THEME_CSS__ __PLUGIN_ASSETS__
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="degoog is an alternative search engine aggregator." />
+  <link rel="icon" href="/public/favicon/favicon.ico?v=__APP_VERSION__" type="image/x-icon" />
+  <link rel="manifest" href="/public/favicon/site.webmanifest" crossorigin="use-credentials" />
+  <link rel="search" type="application/opensearchdescription+xml" title="degoog" href="/opensearch.xml" />
+  <title>degoog</title>
+  <script>
+    (function () {
+      var t = localStorage.getItem("theme");
+      var r = document.documentElement;
+      if (t === "light") r.setAttribute("data-theme", "light");
+      else if (t === "dark") r.setAttribute("data-theme", "dark");
+      else {
+        var m = window.matchMedia("(prefers-color-scheme: dark)");
+        r.setAttribute("data-theme", m.matches ? "dark" : "light");
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="/theme/style.css?v=__APP_VERSION__" />
+  __THEME_CSS__ __PLUGIN_ASSETS__
 </head>
 
 <body>
-	<div id="app">
-		<header class="header" id="header">
-			<div class="header-right">
-				<a href="/settings" class="header-icon" id="nav-settings-top" title="Settings">
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-						stroke-linecap="round" stroke-linejoin="round">
-						<path
-							d="M12.22 2h-.44a2 2 0 00-2 2v.18a2 2 0 01-1 1.73l-.43.25a2 2 0 01-2 0l-.15-.08a2 2 0 00-2.73.73l-.22.38a2 2 0 00.73 2.73l.15.1a2 2 0 011 1.72v.51a2 2 0 01-1 1.74l-.15.09a2 2 0 00-.73 2.73l.22.38a2 2 0 002.73.73l.15-.08a2 2 0 012 0l.43.25a2 2 0 011 1.73V20a2 2 0 002 2h.44a2 2 0 002-2v-.18a2 2 0 011-1.73l.43-.25a2 2 0 012 0l.15.08a2 2 0 002.73-.73l.22-.39a2 2 0 00-.73-2.73l-.15-.08a2 2 0 01-1-1.74v-.5a2 2 0 011-1.74l.15-.09a2 2 0 00.73-2.73l-.22-.38a2 2 0 00-2.73-.73l-.15.08a2 2 0 01-2 0l-.43-.25a2 2 0 01-1-1.73V4a2 2 0 00-2-2z" />
-						<circle cx="12" cy="12" r="3" />
-					</svg>
-				</a>
-			</div>
-		</header>
+  <div id="app">
+    <header class="header" id="header">
+      <div class="header-right">
+        <a href="/settings" class="header-icon" id="nav-settings-top" title="Settings">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M12.22 2h-.44a2 2 0 00-2 2v.18a2 2 0 01-1 1.73l-.43.25a2 2 0 01-2 0l-.15-.08a2 2 0 00-2.73.73l-.22.38a2 2 0 00.73 2.73l.15.1a2 2 0 011 1.72v.51a2 2 0 01-1 1.74l-.15.09a2 2 0 00-.73 2.73l.22.38a2 2 0 002.73.73l.15-.08a2 2 0 012 0l.43.25a2 2 0 011 1.73V20a2 2 0 002 2h.44a2 2 0 002-2v-.18a2 2 0 011-1.73l.43-.25a2 2 0 012 0l.15.08a2 2 0 002.73-.73l.22-.39a2 2 0 00-.73-2.73l-.15-.08a2 2 0 01-1-1.74v-.5a2 2 0 011-1.74l.15-.09a2 2 0 00.73-2.73l-.22-.38a2 2 0 00-2.73-.73l-.15.08a2 2 0 01-2 0l-.43-.25a2 2 0 01-1-1.73V4a2 2 0 00-2-2z" />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+        </a>
+      </div>
+    </header>
 
-		<main class="main" id="main-home">
-			<div class="logo-container">
-				<h1 class="logo">
-					<span class="logo-d">d</span><span class="logo-e">e</span><span class="logo-g1">g</span><span
-						class="logo-o1">o</span><span class="logo-o2">o</span><span class="logo-g2">g</span>
-				</h1>
-			</div>
-			<div class="search-container">
-				<form action="/search" method="get" id="search-form-home" class="search-form">
-					<div class="search-bar" id="search-bar-home">
-						<svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
-							stroke="var(--search-icon-color)" stroke-width="3">
-							<circle cx="11" cy="11" r="8" />
-							<path d="M21 21l-4.35-4.35" />
-						</svg>
-						<input type="text" class="search-input" id="search-input" name="q" autocomplete="off" autofocus
-							placeholder="" />
-						<div class="ac-dropdown" id="ac-dropdown-home"></div>
-						<div id="search-bar-actions-home" class="search-bar-actions"></div>
-					</div>
-					<div class="button-row">
-						<button type="submit" class="search-btn" id="btn-search">degoog Search</button>
-						<button type="button" class="search-btn lucky-btn" id="btn-lucky">I'm Feeling Lucky</button>
-					</div>
-				</form>
-			</div>
-		</main>
+    <main class="main" id="main-home">
+      <div class="logo-container">
+        <h1 class="logo">
+          <span class="logo-d">d</span><span class="logo-e">e</span><span class="logo-g1">g</span><span
+            class="logo-o1">o</span><span class="logo-o2">o</span><span class="logo-g2">g</span>
+        </h1>
+      </div>
+      <div class="search-container">
+        <form action="/search" method="get" id="search-form-home" class="search-form">
+          <div class="search-bar" id="search-bar-home">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="var(--search-icon-color)" stroke-width="3">
+              <circle cx="11" cy="11" r="8" />
+              <path d="M21 21l-4.35-4.35" />
+            </svg>
+            <input type="text" class="search-input" id="search-input" name="q" autocomplete="off" autofocus
+              placeholder="" />
+            <div class="ac-dropdown" id="ac-dropdown-home"></div>
+            <div id="search-bar-actions-home" class="search-bar-actions"></div>
+          </div>
+          <div class="button-row">
+            <button type="submit" class="search-btn" id="btn-search">degoog Search</button>
+            <button type="button" class="search-btn lucky-btn" id="btn-lucky">I'm Feeling Lucky</button>
+          </div>
+        </form>
+      </div>
+    </main>
 
-		<footer class="home-footer" id="home-footer">
-			<div class="home-footer-bottom">
-				<a href="https://github.com/fccview/degoog/releases/tag/__APP_VERSION__" target="_blank" rel="noopener">
-					degoog <span class="home-footer-version">__APP_VERSION__</span>
-				</a>
-				<a class="home-footer-separator">|</a>
-				<a href="https://github.com/fccview/degoog" target="_blank" rel="noopener">repo</a>
-				<a class="home-footer-separator">|</a>
-				<a href="https://fccview.github.io/degoog" target="_blank" rel="noopener">docs</a>
-			</div>
-		</footer>
-	</div>
-	<script type="module" src="/public/app.js?v=__APP_VERSION__"></script>
+    <footer class="home-footer" id="home-footer">
+      <div class="home-footer-bottom">
+        <a href="https://github.com/fccview/degoog/releases/tag/__APP_VERSION__" target="_blank" rel="noopener">
+          degoog <span class="home-footer-version">__APP_VERSION__</span>
+        </a>
+        <a class="home-footer-separator">|</a>
+        <a href="https://github.com/fccview/degoog" target="_blank" rel="noopener">repo</a>
+        <a class="home-footer-separator">|</a>
+        <a href="https://fccview.github.io/degoog" target="_blank" rel="noopener">docs</a>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/public/app.js?v=__APP_VERSION__"></script>
 </body>
 
 </html>
