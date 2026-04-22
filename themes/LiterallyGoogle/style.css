@@ -210,6 +210,16 @@
   color: var(--text-link) !important;
 }
 
+.wiki-desc {
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.sidebar-panel,
+.results-slot-panel {
+  border-radius: 1rem !important;
+}
+
 .results-tab {
   font-weight: 500;
 }
