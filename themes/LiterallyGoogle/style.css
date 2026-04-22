@@ -206,6 +206,10 @@
   user-select: none;
 }
 
+.glance-link {
+  color: var(--text-link) !important;
+}
+
 .results-tab {
   font-weight: 500;
 }
@@ -243,6 +247,7 @@
   border-color: var(--bg-hover);
 }
 
+.sidebar-accordion-body:has(.wiki-card),
 .sidebar-accordion-body:has(.kp-title),
 .sidebar-accordion-body:has(.kp-description),
 .sidebar-accordion-body:has(.kp-image) {
@@ -294,25 +299,7 @@
 }
 
 body {
-  animation: fade 0.3s forwards;
-}
-
-#results-list:not(:has(.skeleton-results)) {
-  opacity: 0;
-  animation: 0.3s popFade 0.1s forwards ease-out;
-}
-
-@keyframes popFade {
-  0% {
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(2px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  animation: fade 0.4s forwards;
 }
 
 @keyframes fade {
