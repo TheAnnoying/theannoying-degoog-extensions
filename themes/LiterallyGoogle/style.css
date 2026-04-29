@@ -310,12 +310,20 @@
 
 /* SETTINGS PAGE */
 
+[data-theme="light"] .settings-page-body {
+  background: #f0f4f9;
+}
+
 .settings-section-heading:has(+ .settings-fieldset) {
   margin-bottom: 10px;
 }
 
 .settings-nav-item {
   border-radius: 999px;
+}
+
+[data-theme="light"] .settings-nav-item.active {
+  background: white;
 }
 
 .ext-group-label {
@@ -356,6 +364,11 @@
   background: #37393b;
 }
 
+[data-theme="light"] .settings-toggle-wrap,
+[data-theme="light"] .ext-card {
+  background: white;
+}
+
 .ext-card-configure,
 .ext-card-apply {
   background: #282a2c;
@@ -363,8 +376,14 @@
   border: none;
 }
 
-.ext-card-configure:hover,
-.ext-card-apply:hover {
+[data-theme="light"] .ext-card-configure,
+[data-theme="light"] .ext-card-apply {
+  color: black;
+  background: #d5dff0;
+}
+
+[data-theme="dark"] .ext-card-configure:hover,
+[data-theme="dark"] .ext-card-apply:hover {
   color: white;
 }
 
@@ -378,4 +397,12 @@
 .theme-select:hover {
   background: #414345;
   border: none;
+}
+
+[data-theme="light"] .theme-select {
+  background: #dde3ea;
+}
+
+[data-theme="light"] .theme-select:hover {
+  background: #ced3da;
 }
