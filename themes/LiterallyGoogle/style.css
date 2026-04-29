@@ -308,20 +308,6 @@
   border-bottom-right-radius: 12px;
 }
 
-body {
-  animation: fade 0.4s forwards;
-}
-
-@keyframes fade {
-  0% {
-    filter: blur(1px);
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /* SETTINGS PAGE */
 
 .settings-section-heading:has(+ .settings-fieldset) {
