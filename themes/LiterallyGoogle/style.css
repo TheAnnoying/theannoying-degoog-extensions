@@ -217,7 +217,7 @@
 
 .sidebar-panel,
 .results-slot-panel {
-  border-radius: 1rem !important;
+  border-radius: 20px !important;
 }
 
 .results-tab {
@@ -226,7 +226,7 @@
 
 .glance-box {
   margin: 0;
-  border-radius: 12px;
+  border-radius: 20px;
 }
 
 .result-title {
@@ -320,4 +320,76 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+/* SETTINGS PAGE */
+
+.settings-section-heading:has(+ .settings-fieldset) {
+  margin-bottom: 10px;
+}
+
+.settings-nav-item {
+  border-radius: 999px;
+}
+
+.ext-group-label {
+  text-transform: capitalize;
+}
+
+.settings-fieldset,
+.ext-cards {
+  gap: 2px;
+}
+
+.settings-toggle-wrap:first-child,
+.ext-cards > div:first-child {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.settings-toggle-wrap:last-child,
+.ext-cards > div:last-child {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.settings-toggle-wrap:not(:has(+ .settings-toggle-wrap)):not(.settings-toggle-wrap + .settings-toggle-wrap) {
+  border-radius: 20px;
+}
+
+.settings-toggle-wrap {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.settings-toggle-wrap,
+.ext-card {
+  padding: 17px 20px;
+  border: none;
+  border-radius: 4px;
+  background: #37393b;
+}
+
+.ext-card-configure,
+.ext-card-apply {
+  background: #282a2c;
+  border-radius: 999px;
+  border: none;
+}
+
+.ext-card-configure:hover,
+.ext-card-apply:hover {
+  color: white;
+}
+
+.theme-select {
+  background: #333537;
+  border-radius: 999px;
+  padding: 15px 20px;
+  border: none;
+}
+
+.theme-select:hover {
+  background: #414345;
+  border: none;
 }
