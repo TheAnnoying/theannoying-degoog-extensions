@@ -443,3 +443,14 @@
 .store-repo-img {
   border-radius: 999px;
 }
+
+
+/* Extension Specific */
+.apps-pocket-panel {
+  border-radius: 20px !important;
+}
+
+[data-theme="light"] .apps-pocket-panel {
+  background: #e9eef6;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
