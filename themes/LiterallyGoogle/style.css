@@ -310,6 +310,10 @@
 
 /* SETTINGS PAGE */
 
+.btn {
+  border-radius: 999px;
+}
+
 [data-theme="light"] .settings-page-body {
   background: #f0f4f9;
 }
@@ -330,23 +334,46 @@
   text-transform: capitalize;
 }
 
+.store-updates-body,
 .settings-fieldset,
 .ext-cards {
   gap: 2px;
 }
 
+.store-updates-row {
+  padding: 17px;
+  border-radius: 4px;
+  background: var(--bg);
+}
+
+.ext-card:not(.settings-section) {
+  padding: 17px;
+  border: none;
+  border-radius: 4px;
+  background: #37393b;
+}
+
+.settings-section {
+  border: none;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.store-updates-body > div:first-child,
 .settings-toggle-wrap:first-child,
 .ext-cards > div:first-child {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
+.store-updates-body > div:last-child,
 .settings-toggle-wrap:last-child,
 .ext-cards > div:last-child {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
+.store-updates-row:not(:has(+ .store-updates-row)):not(.store-updates-row + .store-updates-row),
 .settings-toggle-wrap:not(:has(+ .settings-toggle-wrap)):not(.settings-toggle-wrap + .settings-toggle-wrap) {
   border-radius: 20px;
 }
@@ -356,14 +383,12 @@
   justify-content: space-between;
 }
 
-.settings-toggle-wrap,
-.ext-card {
-  padding: 17px 20px;
+.settings-toggle-wrap {
+  padding: 17px;
   border: none;
-  border-radius: 4px;
-  background: #37393b;
 }
 
+[data-theme="light"] .store-updates-row,
 [data-theme="light"] .settings-toggle-wrap,
 [data-theme="light"] .ext-card {
   background: white;
@@ -390,7 +415,7 @@
 .theme-select {
   background: #333537;
   border-radius: 999px;
-  padding: 15px 20px;
+  padding: 15px;
   border: none;
 }
 
@@ -405,4 +430,16 @@
 
 [data-theme="light"] .theme-select:hover {
   background: #ced3da;
+}
+
+.store-updates-panel {
+  border-radius: 25px;
+}
+
+.store-repo-detail {
+  border-radius: 20px;
+}
+
+.store-repo-img {
+  border-radius: 999px;
 }
