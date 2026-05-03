@@ -2,7 +2,6 @@
   "name": "LiterallyGoogle",
   "author": "TheAnnoying",
   "description": "A theme replicating Google's design.",
-  "version": "1.1.6",
   "css": "style.css",
   "html": {
     "layout": "layout.html",
