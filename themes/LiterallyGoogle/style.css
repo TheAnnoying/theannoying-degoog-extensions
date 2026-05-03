@@ -353,7 +353,7 @@
   background: #37393b;
 }
 
-.settings-section {
+.settings-section:not(.store-catalog-section) {
   border: none;
   border-radius: 25px;
   padding: 25px;
