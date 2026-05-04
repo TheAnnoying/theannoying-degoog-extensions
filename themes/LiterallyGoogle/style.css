@@ -218,6 +218,7 @@
 .sidebar-panel,
 .results-slot-panel {
   border-radius: 20px !important;
+  border: none;
 }
 
 .results-tab {
