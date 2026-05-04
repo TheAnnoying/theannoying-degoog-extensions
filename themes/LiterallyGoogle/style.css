@@ -1,10 +1,4 @@
-@font-face {
-  font-family: "Google Sans";
-  src: url("/themes/LiterallyGoogle/fonts/google-sans/static/GoogleSans-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
 * {
   font-family: "Google Sans";
@@ -200,10 +194,33 @@
 
 /* RESULTS PAGE */
 
+#results-header {
+  background: var(--bg);
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+#results-header.scrolled {
+  padding-bottom: 18px;
+}
+
+[data-theme="light"] #results-header.scrolled {
+  border-bottom: 1px solid var(--border-light);
+}
+
 .btn {
   border-radius: 8px;
   font-family: "Google Sans";
   user-select: none;
+}
+
+.btn--secondary {
+  background: var(--btn-bg);
+}
+
+.btn--secondary:hover {
+  background: var(--bg-hover);
 }
 
 .glance-link {
@@ -355,9 +372,12 @@
 }
 
 .settings-section:not(.store-catalog-section) {
-  border: none;
   border-radius: 25px;
-  padding: 25px;
+  box-shadow: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0 2rem;
 }
 
 .store-updates-body > div:first-child,
@@ -385,6 +405,7 @@
 }
 
 .settings-toggle-wrap {
+  background: #37393b;
   padding: 17px;
   border: none;
 }
@@ -393,10 +414,6 @@
 [data-theme="light"] .settings-toggle-wrap,
 [data-theme="light"] .ext-card:not(.settings-section) {
   background: white;
-}
-
-[data-theme="light"] .settings-section:not(.store-catalog-section) {
-  background: rgb(250, 251, 255);
 }
 
 .ext-card-configure,
@@ -435,6 +452,10 @@
 
 [data-theme="light"] .theme-select:hover {
   background: #ced3da;
+}
+
+.settings-fieldset-inverse {
+  padding: 0;
 }
 
 .store-updates-toggle {
