@@ -391,8 +391,12 @@
 
 [data-theme="light"] .store-updates-row,
 [data-theme="light"] .settings-toggle-wrap,
-[data-theme="light"] .ext-card {
+[data-theme="light"] .ext-card:not(.settings-section) {
   background: white;
+}
+
+[data-theme="light"] .settings-section:not(.store-catalog-section) {
+  background: rgb(250, 251, 255);
 }
 
 .ext-card-configure,
@@ -414,14 +418,14 @@
 }
 
 .theme-select {
-  background: #333537;
+  background: var(--search-bar-bg);
   border-radius: 999px;
   padding: 15px;
   border: none;
 }
 
 .theme-select:hover {
-  background: #414345;
+  background: var(--search-bar-bg-hover);
   border: none;
 }
 
@@ -453,6 +457,9 @@
   border-radius: 999px;
 }
 
+.store-filter-select {
+  border-radius: 999px;
+}
 
 /* Extension Specific */
 .apps-pocket-panel {
